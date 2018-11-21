@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
     var color;
     var canvas = document.getElementById('canvas')
     var palette = document.getElementById('palette', 'mr-auto')
+    var btn = document.createElement('button')
+    var btnText = document.createTextNode('Reset')
     for (var row = 0; row < 16; row++) {
         var createRow = document.createElement('div')
         createRow.classList.add('row')
@@ -27,4 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
         palette.appendChild(createPal)
         createPal.style.backgroundColor = picker
     }
+    btn.classList.add('btn')
+    btn.appendChild(btnText)
+    palette.appendChild(btn)
 })
