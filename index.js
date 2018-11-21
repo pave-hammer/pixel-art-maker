@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
             var createCol = document.createElement('div')
             createCol.classList.add('pixel')
             createCol.addEventListener('click', (event) => {
+                console.log(event.target)
                 event.target.style.backgroundColor = color
             })
             createRow.appendChild(createCol)
