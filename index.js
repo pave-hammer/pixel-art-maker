@@ -29,12 +29,12 @@ document.addEventListener('DOMContentLoaded', () => {
         palette.appendChild(createPal)
         createPal.style.backgroundColor = picker
     }
+
+    function setPenColor(color) {
+
+    }
+    
+    function setPixelColor(pixel) {
+        pixel.style.backgroundColor = penColor
+    }
 })
-
-function setPenColor(pen) {
-    penColor = pen
-}
-
-function setPixelColor(pixel) {
-    pixel.style.backgroundColor = penColor
-}
