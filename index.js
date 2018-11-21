@@ -29,7 +29,13 @@ document.addEventListener('DOMContentLoaded', () => {
         palette.appendChild(createPal)
         createPal.style.backgroundColor = picker
     }
+    var resetAll = document.getElementsByClassName('pixel')
     btn.classList.add('btn')
     btn.appendChild(btnText)
+    btn.addEventListener('click', () => {
+        for (var i = 0; i < resetAll.length; i++){
+            resetAll[i].style.backgroundColor = 'white'
+        }
+    })
     palette.appendChild(btn)
 })
