@@ -7,7 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
     var btn = document.createElement('button')
     var btnText = document.createTextNode('Reset')
     var currentColor = document.createElement('div')
-    currentColor.classList.add('selected-color')
+    currentColor.classList.add('selected-color', 'text-center')
+    currentColor.innerText = 'Current Color'
 
     for (var i = 0; i < colors.length; i++) {
         var picker = colors[i]
