@@ -1,4 +1,8 @@
 
+h1 {
+    font-family: 'Oswald', sans-serif;
+}
+
 #main {
     margin: 0 0 0 2.5%;
 }
@@ -36,11 +40,16 @@
     justify-content: space-between;    
 }
 
+.selected-color {
+    height: 40px;
+    width: 150px;
+    border: 2px solid black;
+    margin: auto;
+}
+
 .btn {
     margin-left: auto;
     margin-right: 2.5%;
 }
 
-h1 {
-    font-family: 'Oswald', sans-serif;
-}
+
